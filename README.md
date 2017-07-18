@@ -1,3 +1,8 @@
+## *Fork Notes*
+*The Pi-Hole Docker project doesn't seem to persist certain changes across stops/starts of the Pi-hole container, specifically the `/etc/hosts` file that can be utilized to create custom DNS entries.  This fork persists that file and makes a couple of small other changes, notably configuring the run script to expose the Pi-Hole admin interface on port 8080 and to use the ARM docker image, instead of the default Alpine.*
+
+## Docker-Pi-Hole
+
 A [Docker](https://www.docker.com/what-docker) project to make lightweight x86 and ARM container with [pi-hole](https://pi-hole.net) functionality.  Why?  Originally designed to be a quick, easy, and portable way to run x86 Pi-Hole, it now has an arm specific tag too.
 
 1) Install docker for your [x86-64 system](https://www.docker.com/community-edition) or [ARMv6l/ARMv7 system](https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/) using those links.
